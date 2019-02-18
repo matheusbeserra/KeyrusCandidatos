@@ -1,0 +1,21 @@
+<div class="container" *ngIf="appState == 'default'">
+    <h3>Indique um amigo para trabalhar na Keyrus</h3>
+    <form (submit)="addCandidato()">
+      <input type="text" [(ngModel)]="text" name="text">
+    </form>
+    </div>
+    
+    <div class="container" *ngIf="appState == 'edit'">
+      <h3>Digitou errado? O nome do candidato</h3>
+    <form (submit)="updateCandidato()">
+      <input type="text" [(ngModel)]="text" name="text">
+    </form>
+    </div>
+    
+    <div class="container">
+    <h3>Lista de Candidatos</h3>
+    <ul class="lista" *ngFor="let candidato of candidatos">
+      <span (click)="editCandidato(candidato)">{{candidato.text}}</span>
+      <button (click)="deleteCandidato(candidato.text)">x</button>
+    </ul>
+  </div>

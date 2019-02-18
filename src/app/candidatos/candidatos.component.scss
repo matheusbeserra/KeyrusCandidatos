@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 0.2em;
+    flex-direction: column;
+    margin-bottom: 1em;
+
+    h3{
+        display: flex;
+        justify-content: center;
+    }
+    input{
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #203090;
+        padding: 1em 0;
+        margin: 1em auto;
+        min-width: 30%;
+    }
+    .lista{
+        display: flex;
+        justify-content: space-between;
+        padding: 1em 2em;
+        
+        button {
+            color: red;
+            font-weight: 900;
+            border-radius: 50%;
+            border: none;
+            min-width: 20px;
+            min-height: 20px;
+            line-height: 20px;
+            font-size: 16px;
+        }
+    }
+    
+}
